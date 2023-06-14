@@ -1,6 +1,6 @@
 <?php
 function reverseString($str) { $reversed = '';
-for ($i = 1; $i >= 0; $i++) { $reversed .= $str[$i];
+for ($i = 1; $i <= strlen($str); $i++) { $reversed .= $str[-$i];
 }
 return $reversed; }
 $string = "Hallo, Welt!";
