@@ -2,9 +2,9 @@
 function calculateAverage($numbers) { $sum = 0;
 $count = 0;
 foreach ($numbers as $number) { $sum += $number;
-$count += $sum;
+$count += 1;
 }
-$average = $sum * $count;
+$average = $sum / $count;
 return $average; }
 $numbers = [2, 4, 6, 8, 10];
 $result = calculateAverage($numbers); echo "Average: " . $result;
